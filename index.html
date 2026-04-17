@@ -1,179 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>About me  </title>
-   <link rel="stylesheet" href="styels.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Aref | Portfolio</title>
+    <link rel="stylesheet" href="./styels.css">
 </head>
 <body>
-   <div class="contenr-nav">
+
     <nav>
-      <ul>
-        <li> 
-         <a href="#">HOME</a>
-        </li>
-        <li> 
-         <a href="#skill">SKILL</a>
-        </li>
-        <li> 
-         <a href="#Project">Project</a>
-        </li>
-        <li> 
-         <a href="#Advice">Advice</a>
-        </li>
-        <li> 
-         <a href="#communication">Communication</a>
-        </li>
-      </ul>
+        <div class="nav-container">
+            <div class="logo">ALI AREF</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#Project">Projects</a></li>
+                <li><a href="#Advice">Advice</a></li>
+                <li><a href="#communication">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-     <header>
-      <div class="of-header">
-     <h1 > Hi:I'm Ali Aref Ahemad </h1>
-        <h2> I'm:  <div> <i>a</i>  Web developer  </div></h2>
-      <div class="p-width"><p> I am 19 years old and I 
-   study in the College of Artificial Intelligence at Badr University  </p></div>
-    </div>
-        <div>
-         <img src="my imge .jpg" class="img1">
-        </div>
-      </div>
-         </header>
-        <div class="contaner-skill">
-          <br id="skill">
-        <div class="h1-skill"> 
-         <h1 > My skill </h1>
-        </div>
-        <table>
-         <tr></tr>
-           <th> <img class="img2" src="html imge .jpg" alt=""> </ht>
-           <th> <img  class="img2" src="css imge .jpg" alt=""> </ht>
-           <th> <img  class="img2" src="python imge.jpg" alt=""> </ht>
-           <th> <img  class="img2" src="java imge .jpg" alt=""> </th>
-           <th> <img  class="img2" src="c++ imge .jpg" alt=""> </th>
-           </tr>
-           <tr>
-             <td> 70%</td>
-             <td>70%</td>
-             <td>50%</td>
-             <td>50%</td>
-             <td>50%</td>
-           </tr>
-        </table>
-        <div class="The-certificates">
-         <h1>The certificates I obtained</h1>
-        </div>
-        <div class="contaner-img-of-cert">
-        <div class="cs50">
-         <img class="img3" src="cs50 .jpg" alt="">
-         <p> This certificate is the CS50 course 
-         certificate that I obtained from ITI.</p>
-        </div>
-        <div class="phython">
-         <img class="img3" src="pyth.jpg" alt="">
-         <p> This certificate is the Python course 
-         certificate I received from ITI.  </p>
-         </div>
-         <div class="my-img2">
-          <img src="IMG-20250730-WA0120.jpg" alt="">
-         </div>
-         </div>
-           </div>
-          
 
-          <div class="contaner-project">
-            <br id="Project">
-          <div class="p-project">
-            <h1> My Project</h1>
-          </div>
-           <div class="f-projects">
-               <iframe src="" frameborder="1px">tyujry</iframe>
-                <iframe src="" frameborder="1px">tjurt</iframe>
-           </div>
-         </div>
-         <div class="contaner-advith">
-          <br  id="Advice">
-         <div class="h1-advith">
-           <h1> Advice For You </h1>
-         </div>
-         <div class="p-advith">
-          <p> "I’m sharing this advice because I wish good for everyone.
-          My dear brothers and sisters, if you are Muslim, stay committed to prayer and supplication, for life is short and nothing lasts forever. 
-           I wish you all the best. And if you are not Muslim,I encourage you to learn about Islam, for it is the true path and the religion of truth.
-            From the bottom of my heart, I hope that everyone will enter Paradise."  </p>
-         </div>
-         </div>
-         <div class="contaner-communication">
-           <br id="communication">
-           <div class="h1-commum">
-           <h1> To Communication  </h1>
-           </div>
-           <form action="">
-            <div class="taxt">
-              <label for="" class="name">Name:</label>
-              <input type="text" class=" name1" placeholder=" Enter Your Name " required>
+    <header id="home">
+        <div class="hero-content">
+            <h1 class="fade-in">Hi, I'm <span>Ali Aref Ahmed</span></h1>
+            <h2 class="typing-text">I'm a <span id="typing-element"></span></h2>
+            <p>19 years old | Student at the College of Artificial Intelligence, Badr University (BUA)</p>
+            <div class="hero-buttons">
+                <a href="#Project" class="btn-primary">View My Work</a>
+                <a href="#communication" class="btn-secondary">Hire Me</a>
             </div>
-            <div class="email">
-              <label for="" class="email1">Email:</label>
-              <input type="email" class="email2" placeholder=" Enter Your Email " required >
+        </div>
+        <div class="hero-image">
+            <img src="my imge .jpg" alt="Ali Aref" class="profile-img">
+        </div>
+    </header>
+
+    <section class="skills-section" id="skill">
+        <h1 class="section-title">My Technical Skills</h1>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="html imge .jpg" alt="HTML">
+                <h3>HTML</h3>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                <span>70%</span>
             </div>
-            <div class="phone">
-              <label for="" class="phone1">Phone:</label>
-               <input id="phone" name="phone" type="tel" required
-           pattern="^\+?\d{7,15}$"
-           aria-describedby="phoneHint"
-           placeholder="Enter your phone number " />
-           </div>
-            <div class="message">
-              <label for="" class="message1">Message:</label>
-              <textarea id="message"  name="message" rows="6" required
-          placeholder="Enter your message"></textarea>
-              </div>
-            <div class="submit" >
-             <input type="submit" class="submit1">
-            </div>        
-           </form>
-         </div>
-          <div class="finl">
-             <div class="finl-hedr"> <h2> Thanks </h2></div>
-              <div class="finl-bad">
-                <h5> Ali Aref Ahemad </h5>
-               <a href="">C 2025</a>  
-              
-              </div>
-            </div> 
+            <div class="skill-card">
+                <img src="css imge .jpg" alt="CSS">
+                <h3>CSS</h3>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                <span>70%</span>
+            </div>
+            <div class="skill-card">
+                <img src="python imge.jpg" alt="Python">
+                <h3>Python</h3>
+                <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                <span>50%</span>
+            </div>
+            <div class="skill-card">
+                <img src="java imge .jpg" alt="Java">
+                <h3>Java</h3>
+                <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                <span>50%</span>
+            </div>
+            <div class="skill-card">
+                <img src="c++ imge .jpg" alt="C++">
+                <h3>C++</h3>
+                <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                <span>50%</span>
+            </div>
+        </div>
 
+        <h1 class="section-title">Academic Certificates</h1>
+        <div class="certificates-grid">
+            <div class="cert-card">
+                <img src="cs50 .jpg" alt="CS50">
+                <p>CS50 Course Certificate obtained from ITI.</p>
+            </div>
+            <div class="cert-card">
+                <img src="pyth.jpg" alt="Python Certificate">
+                <p>Python Programming Basics Certificate from ITI.</p>
+            </div>
+            <div class="cert-card">
+                <img src="IMG-20250730-WA0120.jpg" alt="Other Cert">
+            </div>
+        </div>
+    </section>
 
+    <section class="projects-section" id="Project">
+        <h1 class="section-title">My Projects</h1>
+        <div class="projects-grid">
+            <div class="project-box">
+                <iframe src="E:\p_Web\web_LOG_SIN\Web_page.html"></iframe>
+                <div class="project-info">
+                    <h3>Login & Signup System</h3>
+                </div>
+            </div>
+            <div class="project-box">
+                <iframe src="E:\p_Web\Page My Fahter\index.html"></iframe>
+                <div class="project-info">
+                    <h3>Personal Tutor Website</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="advice-section" id="Advice">
+        <div class="advice-card">
+            <h1 class="section-title">Advice For You</h1>
+            <p class="advice-text">
+                "I’m sharing this advice because I wish good for everyone. My dear brothers and sisters, if you are Muslim, stay committed to prayer and supplication, for life is short and nothing lasts forever. I wish you all the best. And if you are not Muslim, I encourage you to learn about Islam, for it is the true path and the religion of truth. From the bottom of my heart, I hope that everyone will enter Paradise."
+            </p>
+        </div>
+    </section>
 
+    <section class="contact-section" id="communication">
+        <h1 class="section-title">Get In Touch</h1>
+        <form class="contact-form">
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter Your Name" required>
+            </div>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="input-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="Enter Your Phone Number" required>
+            </div>
+            <div class="input-group">
+                <label>Message</label>
+                <textarea rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
 
+    <footer>
+        <p>Thanks for visiting!</p>
+        <h3>Ali Aref Ahmed</h3>
+        <p>&copy; 2026 </p>
+    </footer>
 
+    <script>
+        const textElement = document.getElementById("typing-element");
+        const text = "Web Developer";
+        let index = 0;
+        let isDeleting = false;
 
+        function type() {
+            const currentText = isDeleting 
+                ? text.substring(0, index--) 
+                : text.substring(0, index++);
 
+            textElement.innerHTML = currentText;
 
+            let typeSpeed = isDeleting ? 100 : 200;
 
+            if (!isDeleting && index > text.length) {
+                isDeleting = true;
+                typeSpeed = 1500; // وقت الانتظار بعد كتابة الكلمة كاملة
+            } else if (isDeleting && index < 0) {
+                isDeleting = false;
+                index = 0;
+                typeSpeed = 500; // وقت الانتظار قبل البدء مجدداً
+            }
 
+            setTimeout(type, typeSpeed);
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        window.onload = type;
+    </script>
 
 </body>
 </html>
