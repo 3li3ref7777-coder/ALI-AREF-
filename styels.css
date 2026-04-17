@@ -315,3 +315,153 @@ footer {
     .projects-grid { grid-template-columns: 1fr; }
     .profile-img { width: 250px; margin-bottom: 40px; }
 }
+/* ====== Responsive تحسينات عامة ====== */
+
+.container,
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ====== Tablets ====== */
+@media (max-width: 992px) {
+
+    .nav-container {
+        padding: 0 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        padding-top: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .profile-img {
+        width: 280px;
+        margin-bottom: 30px;
+    }
+
+    .skills-container {
+        gap: 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ====== Mobile ====== */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 15px 0;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    header {
+        padding: 100px 20px 50px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 80%;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 220px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .skills-container {
+        padding: 0 20px;
+    }
+
+    .skill-card {
+        width: 140px;
+        padding: 20px;
+    }
+
+    .certificates-grid {
+        padding: 0 20px;
+    }
+
+    .projects-grid {
+        padding: 0 20px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    .advice-card {
+        margin: 50px 20px;
+        padding: 30px;
+    }
+
+    .contact-form {
+        margin: 0 20px 80px;
+        padding: 25px;
+    }
+}
+
+/* ====== Small Mobile ====== */
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile-img {
+        width: 180px;
+    }
+
+    .skill-card {
+        width: 120px;
+        padding: 15px;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+}
